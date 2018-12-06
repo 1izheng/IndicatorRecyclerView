@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/hori_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        />
+
+    <SeekBar
+        android:id="@+id/sbar_indicator"
+        android:layout_width="80dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center_horizontal"
+        android:focusable="true"
+        android:progressDrawable="@drawable/seekbar_indicator_normal"
+        android:thumb="@drawable/seekbar_indicator_on"
+        />
+
+</LinearLayout>
