@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.zhy.adapter.recyclerview.MultiItemTypeAdapter;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 仿拼拼多多横向滚动recyclerView 带指示器
@@ -34,10 +35,30 @@ public class MainActivity extends AppCompatActivity {
         horiRecyclerView = findViewById(R.id.hori_recyclerView);
         sbarIndicator = findViewById(R.id.sbar_indicator);
 
+
+
+        List<String> list = new ArrayList<>();
+        list.add("1");
+        list.add("1");
+        list.add("1");
+        list.add("1");
+        list.add("1");
+        list.add("1");
+        list.add("1");
+        list.add("1");
+        list.add("1");
+        list.add("1");
+        list.add("1");
+        list.add("1");
+        list.add("1");
+        list.add("1");
+        list.add("1");
+
+
         //设置列表可以水平滑动，两行
         final GridLayoutManager layoutManager = new GridLayoutManager(this, 2, GridLayoutManager.HORIZONTAL, false);
         horiRecyclerView.setLayoutManager(layoutManager);
-        homeHoriTypeAdapter = new HomeHoriTypeAdapter(this, new ArrayList<String>());
+        homeHoriTypeAdapter = new HomeHoriTypeAdapter(this, list);
         homeHoriTypeAdapter.setOnItemClickListener(new MultiItemTypeAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, RecyclerView.ViewHolder holder, int position) {
